@@ -58,5 +58,13 @@ def main():
         # Displaying interpretation picture on the right
         with col2:
             fig2, ax2 = plt.subplots(figsize=(4, 4))
-            viz.visualize_image_attr(features_imp, show_colorbar=True, fig_size=(4, 4))
-            st.pyplot(fig2)
+            fig2, ax2 = viz.visualize_image_attr(features_imp, show_colorbar=True, fig_size=(4, 4))
+            st.pyplot(fig2, use_container_width=True)
+
+            
+
+
+
+if __name__ == "__main__":
+    main()
+
